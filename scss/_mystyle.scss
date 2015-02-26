@@ -1,0 +1,17 @@
+.sil-contents-wrapper {
+  background-color: $smoke;
+  margin: rem-calc(48);
+
+  h2 {
+    padding: rem-calc(24);
+  }
+}
+
+.sil-side-wrapper {
+  margin: rem-calc(48);
+}
+
+.sil-height100 {
+  height: 100%;
+  min-height: 100%;
+}
