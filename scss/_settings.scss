@@ -104,7 +104,7 @@ $font-family-sans-serif: YuGothic , ‘游ゴシック’ , ‘Hiragino Kaku Got
 $ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
-// $white-smoke : #F5F5F5;
+$white-smoke : #F5F5F5;
 // $silver      : #EFEFEF;
 $smoke       : #EEEEEE;
 // $gainsboro   : #DDDDDD;
@@ -122,6 +122,7 @@ $smoke       : #EEEEEE;
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;
+$primary-color: #008CBA;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -218,6 +219,12 @@ $body-bg: $ghost;
 // $h4-font-size: rem-calc(23);
 // $h5-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
+$h1-font-size: rem-calc(44);
+$h2-font-size: rem-calc(37);
+$h3-font-size: rem-calc(27);
+$h4-font-size: rem-calc(23);
+$h5-font-size: rem-calc(18);
+$h6-font-size: 1rem;
 
 // We use these to control header size reduction on small screens
 // $h1-font-reduction: rem-calc(10);
@@ -257,7 +264,7 @@ $body-bg: $ghost;
 // $code-border-size: 1px;
 // $code-border-style: solid;
 // $code-border-color: scale-color($code-background-color, $lightness: -10%);
-// $code-padding: rem-calc(2) rem-calc(5) rem-calc(1);
+// $code-: rem-calc(2) rem-calc(5) rem-calc(1);
 
 // We use these to style anchors
 // $anchor-text-decoration: none;
@@ -1149,11 +1156,13 @@ $body-bg: $ghost;
 
 // We use this to control padding.
 // $side-nav-padding: rem-calc(14 0);
+$side-nav-padding: rem-calc(16 0);
 
 // We use these to control list styles.
 // $side-nav-list-type: none;
 // $side-nav-list-position: outside;
 // $side-nav-list-margin: rem-calc(0 0 7 0);
+$side-nav-list-margin: rem-calc(0 0 8 0);
 
 // We use these to control link styles.
 // $side-nav-link-color: $primary-color;
@@ -1162,6 +1171,7 @@ $body-bg: $ghost;
 // $side-nav-link-bg-hover: hsla(0, 0, 0, 0.025);
 // $side-nav-link-margin: 0;
 // $side-nav-link-padding: rem-calc(7 14);
+$side-nav-link-padding: rem-calc(8 16);
 // $side-nav-font-size: rem-calc(14);
 // $side-nav-font-weight: $font-weight-normal;
 // $side-nav-font-weight-active: $side-nav-font-weight;

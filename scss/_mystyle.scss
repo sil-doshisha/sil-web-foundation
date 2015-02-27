@@ -1,14 +1,43 @@
-.sil-contents-wrapper {
-  background-color: $smoke;
-  margin: rem-calc(48);
-
-  h2 {
-    padding: rem-calc(24);
-  }
+.sil-border-right {
+  border-right: solid 1px $smoke;
 }
 
 .sil-side-wrapper {
-  margin: rem-calc(48);
+  margin-top: $sil-spacing-xxl;
+  margin-bottom: $sil-spacing-xxl;
+  padding-right: $sil-spacing-xxl;
+  padding-left: $sil-spacing-xxl;
+}
+
+.sil-title-wrapper {
+
+  padding-top: $sil-spacing-xxl;
+  padding-bottom: $sil-spacing-xxl;
+  padding-right: $sil-spacing-md;
+  padding-left: $sil-spacing-md;
+
+  border-bottom: solid 1px $smoke;
+
+  h1 {
+    @include sil-mp-reset;
+    font-size: $h3-font-size;
+  }
+}
+
+.sil-contents-wrapper {
+  background-color: $white-smoke;
+  margin: $sil-spacing-xxl;
+  padding: $sil-spacing-xxl;
+
+  h2 {
+    color: $primary-color;
+    font-weight: bold;
+    font-size: $h3-font-size;
+  }
+}
+
+.sil-contents-textarea {
+  margin-top: $sil-spacing-xxl;
 }
 
 .sil-height100 {
