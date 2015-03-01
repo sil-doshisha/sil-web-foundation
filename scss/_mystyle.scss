@@ -38,6 +38,11 @@ $sil-spacing-xxl: rem-calc(48);
     padding-bottom: $sil-spacing-xxl;
     padding-right: $sil-spacing-md;
     padding-left: $sil-spacing-md;
+    @media #{$medium-only} {
+      padding-bottom: ($sil-spacing-xxl / 2);
+      padding-right: ($sil-spacing-md / 2);
+      padding-left: ($sil-spacing-md / 2);
+    }
 
     h1 {
       @include sil-mp-reset;
@@ -51,6 +56,9 @@ $sil-spacing-xxl: rem-calc(48);
       padding-left: 0;
       max-width: 100%;
       height: auto;
+      @media #{$medium-only} {
+        padding-bottom: ($sil-spacing-xl / 2);
+      }
     }
   }
 
@@ -61,19 +69,26 @@ $sil-spacing-xxl: rem-calc(48);
   }
 
   .vcard {
-    display: inline-block;
-    margin: $sil-spacing-md 0;
+    display: block;
     border: none;
+    margin: $sil-spacing-md 0;
     padding: $sil-spacing-md;
+    @media #{$medium-only} {
+      margin: ($sil-spacing-md / 2) 0;
+      padding: ($sil-spacing-md / 2);
+    }
 
     li {
       margin: 0;
-      display: block;
     }
 
     .fn {
       font-weight: bold;
       font-size: 0.9375rem;
+    }
+
+    .email {
+      word-break: break-all;
     }
   }
 }
@@ -105,6 +120,15 @@ $sil-spacing-xxl: rem-calc(48);
     }
     @media #{$medium-only} {
       margin-top: ($sil-spacing-xxl / 2);
+    }
+
+    p {
+      text-indent: 1em;
+      text-align: justify;
+      text-justify: inter-ideograph;
+      -ms-text-justify: inter-ideograph;
+      word-break: normal;
+      word-wrap: break-word;
     }
   }
 }
