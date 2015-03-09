@@ -131,6 +131,16 @@ $sil-spacing-xxl: rem-calc(48);
       word-wrap: break-word;
     }
   }
+
+  .sil-img-area {
+    margin: $sil-spacing-xxl;
+    @media #{$small-only} {
+      margin: ($sil-spacing-xxl / 4);
+    }
+    @media #{$medium-only} {
+      margin: ($sil-spacing-xxl / 2);
+    }
+  }
 }
 
 .sil-height100 {
